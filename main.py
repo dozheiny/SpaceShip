@@ -109,8 +109,6 @@ while running:
                 playerX_change = 5
             if event.key == pygame.K_SPACE:
                 if bullet_state is "ready":
-                    bulletSound = mixer.Sound("laser.wav")
-                    bulletSound.play()
                     # Get the current x cordinate of the spaceship
                     bulletX = playerX
                     fire_bullet(bulletX, bulletY)
